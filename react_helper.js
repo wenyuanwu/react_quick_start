@@ -37,4 +37,24 @@ const Root = () => (
 import {Link} from "react-router-dom";
 <Link to="/about">About</Link>
 
+// column css
+
+@media screen and (min-width: 1000px) and (max-width: 1500px){
+  .App {
+    column-count: 3; 
+    column-gap: 0; 
+  /*overflow: wrap;*/
+  }
+
+}
+
+.img{
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+	break-inside: avoid;
+}
+
+
+
 
