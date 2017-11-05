@@ -4,6 +4,19 @@ create-react-app my-app
 cd my-app/
 npm start
 
+// fetch api
+
+fetch("https://")
+	.then(this._onResponse)
+	.then(this._onJsonReady)
+
+_onResponse(response){
+    return response.json();
+  }
+
+  _onJsonReady(json){
+
+  }
 // react router
 
 npm install --save react-router-dom
@@ -20,4 +33,8 @@ const Root = () => (
     </div>
   </HashRouter>
 );
+
+import {Link} from "react-router-dom";
+<Link to="/about">About</Link>
+
 
